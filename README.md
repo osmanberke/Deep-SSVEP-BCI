@@ -8,8 +8,8 @@ All models were implemented tested with MATLAB 2018B. All following steps assume
 
 # Preparation
 First we have to download all datasets.
-The Benchmark dataset is available from http://bci.med.tsinghua.edu.cn/download.html.
-The BETA database can be downloaded from the following link http://bci.med.tsinghua.edu.cn/download.html.
+The Benchmark dataset and BETA dataset can be downloaded from http://bci.med.tsinghua.edu.cn/download.html.
+
 
 
 # Training and evaluating the models
