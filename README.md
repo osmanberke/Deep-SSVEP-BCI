@@ -2,6 +2,9 @@
 This is the official repository for deep learning networks described in paper: https://arxiv.org/abs/ 
 This repository alows you to train and test models to replicate the results
 
+![alt text](https://github.com/osmanberke/Deep-SSVEP-BCI/blob/main/architechture.png)
+
+
 # Requisites
 
 All models were implemented tested with MATLAB 2018B. All following steps assume that they are executed under these conditions.
