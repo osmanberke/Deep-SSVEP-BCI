@@ -1,4 +1,4 @@
-# A Deep Neural Network forSSVEP-based Brain Computer Interfaces
+# A Deep Neural Network for SSVEP-based Brain Computer Interfaces
 This is the official repository for deep learning networks described in paper: https://arxiv.org/abs/ 
 This repository alows you to train and test models to replicate the results
 
