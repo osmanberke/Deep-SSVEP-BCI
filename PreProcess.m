@@ -40,10 +40,14 @@ for subject=1:totalsubject
 	% Taking data from spesified channels, and signal interval
     sub_data= data(channels,sample_interval,:,:); 
     
-    for chr=1:1:totalcharacter
-        raw_signal=sub_data(:,:,chr,:);
+    for chr=1:1:totalcharacter        
         for blk=1:totalblock            
-            tmp_raw=raw_signal(:,:,1,blk);             
+            if strcmp(dataset,'Bench')
+                tmp_raw=sub_data(:,:,chr,blk);
+            elseif strcmp(dataset,'BETA')
+                tmp_raw=sub_data(:,:,blk,chr);
+                %else
+            end         
             for i=1:subban_no
                 processed_signal=zeros(total_channels,sample_length); % Initialization
                 for j=1:total_channels                       
