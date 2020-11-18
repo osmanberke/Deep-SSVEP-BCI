@@ -20,7 +20,7 @@ for i=1:size_mat(1)
         if  p < 1/M
             itr_matrix(i,j)=0;
         elseif p == 1
-            itr_matrix(i,j)=60/t;
+            itr_matrix(i,j)= log2(M)*(60/t);
         else
             itr_matrix(i,j)= (log2(M) + p*log2(p) + (1-p)*log2((1-p)/(M-1)))*(60/t);
         end
