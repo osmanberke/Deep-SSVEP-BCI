@@ -18,7 +18,7 @@ The Benchmark dataset [2] and BETA dataset [3] can be downloaded from http://bci
 
 
 # Training and evaluating the models
-In our performance evaluations, we conducted the comparisons (following the rocedure in the literature) in a leave-one-block-out fashion.
+In our performance evaluations, we conducted the comparisons (following the procedure in the literature) in a leave-one-block-out fashion.
 For example, we train on 5 (or 3) and test on the remaining block and repeat this process 6 (4) times in order to have exhaustively tested on each block in the case of the benchmark (or the BETA) dataset. For fairness, we take into account a 0.5 seconds gaze shift time while computing the ITR results (as it is computed in other methods). We test with the pre-determined set of 9 channels (Pz, PO3, PO5, PO4, PO6, POz, O1, Oz, and O2) again for fair comparisons (since these are the channels that have been used in the compared methods), but we also test with all of the available 64 channels to fully demonstrate the efficacy of our DNN. 
 # Hyperparameters
 The proposed DNN is initialized by sampling the weights from the Gaussian distribution with 0 mean and 0.01 variance, except that all of the weights in the first layer are initialized with 1's. We train the network in each iteration based on the training batch data , by minimizing the categorical cross entropy loss via the Adam optimizer, with the learning rate 0.0001 (with no decaying). We also incorporate drop-outs between the second and third, third and fourth, and fourth and fifth layers with probabilities 0.1, 0.1, and 0.95, respectively. 
