@@ -79,7 +79,9 @@ for block=1:totalblock
         softmaxLayer
         classificationLayer];      
     
-    layers(2, 1).BiasLearnRateFactor=0; % No need for bias at first layer. Note: Biases initialized with zeros by default.
+    layers(2, 1).BiasLearnRateFactor=0; % At first layer, sub-bands are combined with 1 cnn layer, 
+    % bias term basically adds DC to signal, hence there is no need to use 
+    % bias term at first layer. Note: Bias terms are initialized with zeros by default.  
     train=AllData(:,:,:,:,allblock,:); %Getting training data
     train=reshape(train,[sizes(1),sizes(2),sizes(3),totalcharacter*length(allblock)*totalsubject*1]);
     
@@ -123,7 +125,7 @@ for block=1:totalblock
         layers(8, 1).Weights = main_net.Layers(8, 1).Weights;
         layers(10, 1).Weights = main_net.Layers(10, 1).Weights;
         
-        layers(2, 1).BiasLearnRateFactor=0; % No need for bias at first layer. Note: Biases initialized with zeros by default.       
+        layers(2, 1).BiasLearnRateFactor=0;      
         layers(3, 1).Bias = main_net.Layers(3, 1).Bias;
         layers(5, 1).Bias = main_net.Layers(5, 1).Bias;
         layers(8, 1).Bias = main_net.Layers(8, 1).Bias;
