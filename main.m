@@ -67,8 +67,8 @@ for block=1:totalblock
     allblock(block)=[]; % Exclude the block used for testing    
     layers = [ ...
         imageInputLayer([sizes(1),sizes(2),sizes(3)],'Normalization','none')
-        convolution2dLayer([1,1],1,'WeightsInitializer','ones') % If you use MATLAB R2018b or previous releases, you need to delete (,'WeightsInitializer','ones') and add (layers(2,1).Weights=ones(1,1,sizes(3))) to the line 81
-        convolution2dLayer([sizes(1),1],120,'WeightsInitializer','narrow-normal') % If you use MATLAB R2019a or later releases you need to add (,'WeightsInitializer','narrow-normal')
+        convolution2dLayer([1,1],1,'WeightsInitializer','ones') % If you use MATLAB R2018b or previous releases, you need to delete (,'WeightsInitializer','ones') and add (layers(2,1).Weights=ones(1,1,sizes(3))) to the line 81.
+        convolution2dLayer([sizes(1),1],120,'WeightsInitializer','narrow-normal') % If you use MATLAB R2018b or previous releases you need to delete (,'WeightsInitializer','narrow-normal') from all convolution2dLayer and fullyConnectedLayer definitions. 
         dropoutLayer(0.1)
         convolution2dLayer([1,2],120,'Stride',[1,2],'WeightsInitializer','narrow-normal')
         dropoutLayer(0.1)
