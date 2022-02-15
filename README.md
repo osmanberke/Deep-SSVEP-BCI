@@ -26,7 +26,7 @@ The proposed DNN is initialized by sampling the weights from the Gaussian distri
 We train the network in two stages. The first stage takes a global perspective by training with all of the data (ones in the training set) whereas the second stage re-initializes the network with the global model and fine-tunes it to each subject separately by training with only the corresponding subject data (of the training set). Hence, in the end, each subject has its own model as well. We note that, except a few, most of the existing studies do either develop only a local model or only a global model, which indicates that our introduced two-stage training is a novel contribution to BCI SSVEP spellers. We have observed that this idea of transfer learning with two-staged learning, since it takes into account the inter-subject statistical variations, provides significant ITR improvements.
 
 # References 
-1. O. B. Guney, M. Oblokulov and H. Ozkan, "A Deep Neural Network for SSVEP-Based Brain-Computer Interfaces," in IEEE Transactions on Biomedical Engineering, vol. 69, no. 2, pp. 932-944, Feb. 2022, doi: 10.1109/TBME.2021.3110440.
+1. O. B. Guney, M. Oblokulov and H. Ozkan, "A Deep Neural Network for SSVEP-Based Brain-Computer Interfaces," IEEE Transactions on Biomedical Engineering, vol. 69, no. 2, pp. 932-944,  2022.
 2. Y. Wang, X. Chen, X. Gao, and S. Gao, “A benchmark dataset for
    ssvep-based brain–computer interfaces,” IEEE Transactions on Neural Systems and 
    Rehabilitation Engineering,vol. 25, no. 10, pp. 1746–1752, 2016.
