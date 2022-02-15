@@ -1,5 +1,5 @@
 # A Deep Neural Network for SSVEP-based Brain Computer Interfaces
-This is the official repository for deep neural network (DNN) for SSVEP-based brain computer interfaces (BCI) described in paper [1]: https://arxiv.org/abs/2011.08562.
+This is the official repository for deep neural network (DNN) for SSVEP-based brain computer interfaces (BCI) described in paper [1]: https://ieeexplore.ieee.org/document/9531496 (Arxiv link: https://arxiv.org/abs/2011.08562).
 This repository allows you to train and test, the proposed DNN model.
 
 |![alt text](https://github.com/osmanberke/Deep-SSVEP-BCI/blob/main/system.png)|
