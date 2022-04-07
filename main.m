@@ -1,9 +1,9 @@
 % Training and testing of the proposed deep neural network (DNN) in [1]  
 % for steady-state visual evoked potentials SSVEP-based BCI  
 
-% [1] Osman Berke Guney, Muhtasham Oblokulov, and Huseyin Ozkan, 
-% “A Deep Neural Network for SSVEP-based Brain Computer Interfaces,” 
-% arXiv, 2020.
+% [1] O. B. Guney, M. Oblokulov and H. Ozkan, "A Deep Neural Network for SSVEP-Based 
+% Brain-Computer Interfaces," IEEE Transactions on Biomedical Engineering, vol. 69, 
+% no. 2, pp. 932-944, 2022.
 
 %% Preliminaries
 % Please download benchmark [2] and/or BETA [3] datasets 
